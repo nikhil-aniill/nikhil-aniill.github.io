@@ -9,9 +9,10 @@ category: DFIR
 
 Windows registry in technical terms is a hierarchical database used to store user preferences, settings of installed programs, hardware devices and configuration of operating system. It can also be thought of DNA of the Windows Operating System.
 
-{% figure caption:"Registry Editor" class:"image-caption" %}
 ![regedit](/assets/images/regedit.jpg#center)
-{% endfigure %}
+Registry Editor
+{: .image-caption}
+
 
 ## What is a Hive ? 
 A hive is a logical group of subkeys, keys, and values in the registry that has a set of supporting files loaded into memory when the operating system starts or a user logs in.
@@ -28,40 +29,41 @@ The main five hives in Windows in Windows Registry are as follows:-
 
 
 ## 1. HKEY_CLASSES_ROOT
+<br />
 
-{% figure caption:"HKCR Hive" class:"image-caption" %}
 ![HKCR Hive](/assets/images/hkroot.jpg#center)
-{% endfigure %}
+HKCR Hive
+{: .image-caption}
 
 The above screenshot is of the hive, HKEY_CLASSES_ROOT, which is a collection of file extensions as well as as well as a programmatic identifier (ProgID), Class ID (CLSID), and Interface ID (IID) data.
 
 ---
 
 ## 2. HKEY_CURRENT_USER
+<br />
 
-{% figure caption:"HKCU Hive" class:"image-caption" %}
 ![HKCU Hive](/assets/images/hkcu.jpg#center)
-{% endfigure %}
-
+HKCU Hive
+{: .image-caption}
 
 The above screenshot is of the hive, HKEY_CURRENT_USER, which stores the windows and software configurations specific to the logged in user. There are multiple user level settings related to the printers, desktop wallpaper, display settings, environment variables, keyboard layout, recently opened files and much more. 
 
 This hive is stored in the NTUSER.dat. Most of the forensic artifacts are located in the NTUSER.dat\Software\Microsoft\Windows.
 
-{% figure caption:"Firefox Launcher" class:"image-caption" %}
 ![Firefox Launcher](/assets/images/firefox.jpg#center)
-{% endfigure %}
+Firefox Launcher
+{: .image-caption}
 
 In the screenshot above, we can see the path of the Firefox Launcher that we launched.  
 
 ---
 
 ## 3. HKEY_LOCAL_MACHINE
+<br />
 
-{% figure caption:"HKLM Hive" class:"image-caption" %}
 ![HKLM Hive](/assets/images/hklm.jpg#center)
-{% endfigure %}
-
+HKLM Hive
+{: .image-caption}
 
 HKLM (HKEY_LOCAL_MACHINE) and HKCU (HKEY_CURRENT_USER) are similar. HKLM holds information about the computer as a whole whereas HKCU holds information only about the current user and about the users who have logged in at but have since “switched users”. If a user is changing the HKCU keys, the changes would be reflected only on the user. Whereas, if the user is changing HKLM keys, it would be for every user using the machine.  
 
@@ -83,11 +85,11 @@ The SAM registry file is located on your system at C:\WINDOWS\system32\config. I
 ---
 
 ## 4. HKEY_USERS
+<br />
 
-{% figure caption:"HKU Hive" class:"image-caption" %}
 ![HKU Hive](/assets/images/hku.jpg#center)
-{% endfigure %}
-
+HKU Hive
+{: .image-caption}
 
 Each registry key under the HKEY_USERS hive corresponds to a user on the system and is names with that user’s security identifier, or SID. Inside the keys, Console, Printers, Keyboard, Desktop wallpaper and layout, Disk configuration of each of the users are present.
 
@@ -96,11 +98,12 @@ In the above example the built-in system accounts are .DEFAULT, S-1–5–18, S-
 
 ---
 
-## 5. HKEY_CURRENT_CONFIG
+## 5. HKEY_CURRENT_CONFIG 
+<br />
 
-{% figure caption:"HKCC Hive" class:"image-caption" %}
+
 ![HKCC Hive](/assets/images/hkcc.jpg#center)
-{% endfigure %}
-
+HKCC Hive
+{: .image-caption}
 
 HKEY_CURRENT_CONFIG hive is a shortcut or a pointer directly to the hardware profile currently used which is in the hive, HKEY_LOCAL_MACHINE’s key, HKLM->SYSTEM->Current_Control_Set->Hardware Profiles->Current. This registry hive only exists for convenience. HKCC consists of Software and System from the HKLM’s Current key.
