@@ -15,3 +15,5 @@ style: dark # dark (default) or light
 plugins:
   - jekyll-seo-tag
   - jekyll-figure
+gems:
+  - jekyll-figure
