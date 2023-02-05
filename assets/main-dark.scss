@@ -16,7 +16,23 @@ body {
   line-height: 1.5 !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1{
+  font-size: 25px;
+  margin: 0px;
+  margin-top: 22px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+h2 {
+  font-size: 22px;
+  margin: 0px;
+  margin-top: 22px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+h3, h4, h5, h6 {
   font-size: 17px;
   margin: 0px;
   margin-top: 22px;
@@ -30,3 +46,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
   margin-left: auto;
 }
+
+// Image centering
+
+.text-align-center {
+  text-align: center;
+}
+
+img[src*='#center'] {
+      height: auto;
+      max-width: 102%;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: .8rem;
+  color: lightgrey;
+  }
