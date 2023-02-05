@@ -2,8 +2,9 @@
 layout: post
 title:  "Creating a Shellcode to execute /bin/bash"
 date: 01-02-2022 12:32:45 +0100
-categories:
+category: Assembly
 ---
+# Creating a Shellcode to execute /bin/bash
 ```nasm
 global _start
 section .text
