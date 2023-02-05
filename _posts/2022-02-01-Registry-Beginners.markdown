@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Sneak peek into Windows Registry Hives"
-date: 01-04-2022 12:32:45 +0100
+date: 04-02-2023 12:32:45 +0100
 category: DFIR
 ---
 
