@@ -5,4 +5,4 @@ gemspec
 
 
 gem 'jekyll-seo-tag'
-gem "jekyll-figure"
+gem 'jekyll-figure'
